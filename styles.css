@@ -4,7 +4,8 @@
 	padding: 0;
 }
 .main-content{
-	width: 100vw;
+	min-width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	height: auto;
 	background: radial-gradient(circle, hsla(80, 6%, 10%, 1) 19%, hsla(120, 4%, 14%, 1) 89%);
@@ -81,7 +82,7 @@
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 48px;
+	font-size: 2.5rem;
 	line-height: 65px;
 
 	color: #FFFFFF;
@@ -90,7 +91,7 @@
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 83px;
+	font-size: 5rem;
 	line-height: 113px;
 
 	color: #FFFFFF;
@@ -99,7 +100,7 @@
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 36px;
+	font-size: 2.3rem;
 	line-height: 49px;
 	/* identical to box height */
 	margin-left: 200px;
@@ -306,4 +307,171 @@
 }
 .about-image-container > img {
 	width: 420px;
+}
+
+/* responsiveness */
+
+@media (max-width: 800px) {
+
+    .logo{
+		display: none;
+		
+	}
+	
+	.nav-section{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.nav-section > a{
+		font-family: Nunito Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 5vw;
+		line-height: 5vw;
+		text-decoration: none;
+		color: #FDFDDC;
+	}
+	
+	.nav-section > a:hover{
+		text-decoration: underline;
+	}
+	
+	/* Home page center text styling */
+	.center-text-section{
+		position: relative;
+		width: 70%;
+		height: 50vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin: 5% auto auto auto;
+	}
+	
+	.top-section{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: auto;
+		width: 100%;
+	}
+	.bar{
+		width: 60%;
+		height: 0.7vh;
+		background-color: #FDFDDC;
+		margin-left: 10vw;
+	}
+	
+	.top-section > h3{
+		font-family: Nunito Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 5vw;
+		line-height: 5vw;
+	
+		color: #FFFFFF;
+	}
+	.middle-section > h1{
+		font-family: Nunito Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10vw;
+		line-height: 10vw;
+		padding: 3vh 0px;
+		color: #FFFFFF;
+	}
+	.bottom-section{
+		width: 100%;
+	}
+	.bottom-section > h3{
+		font-size: 5vw;
+		line-height: 5vw;
+		/* identical to box height */
+		margin-left: 25%;
+	}
+
+	/* projects section */
+	.projects-section{
+		width: 90%;
+	}
+	.project-image-container > img{
+		width: 25vw;
+		height: 25vw;
+		left: 10px;
+		z-index: 10;	
+	}
+	.project-image-container{
+		width: 25vw;
+		height: 25vw;
+	}
+	.project-title > a{
+		font-size: 3vw;
+		line-height: 3vw;
+		
+	}
+	.project-title{
+		margin-bottom: 10px;
+	}
+	.project-description{
+		width: 100%;
+	}
+	.project-description > h3 {
+		font-size: 2vw;
+		line-height: 2vw;
+	}
+
+	.Terminal-img > img{
+		border: none;
+		border-radius: 0%;
+	}
+	.project-text-section{
+		margin-left: 30px;
+	}
+
+	/* about page */
+	.about-image-container{
+		width: 30vw;
+		height: 30vw;
+		border: #353434 5px solid;
+	}
+
+	.about-image-container > img{
+		width: 30vw;
+		height: 30vw;
+		left: 50%;
+
+	}
+	.about-section{
+		grid-template-columns: auto auto;
+		width: 90%;
+	}
+	.about-text-section{
+		padding-left: 5vw;
+	}
+	.about-text-section > h3{
+		font-size: 3vw;
+		line-height: 3vw;
+	}
+	.about-links-section {
+		margin-left: 12vw;
+		margin-top: 8vh;
+
+	}
+	.about-link-item > img{
+		width: 6vw;
+		height: 6vw;
+	}
+	.about-link-item > a{
+		font-size: 2vw;
+	}
+	.plug-border > img{
+		border: #4d4d4d 5px solid;
+	}
+	.survey-border {
+		border: #4d4d4d 5px solid;
+	}
 }
